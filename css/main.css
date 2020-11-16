@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:ital,wght@1,500&family=Sansita+Swashed:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&family=Piazzolla:ital,wght@1,500&family=Sansita+Swashed:wght@700&display=swap');
+/* Generic CSS */
+.no-padding {padding:0 !important;}
+h2 {text-align: center; font-family: 'Nunito', sans-serif; font-size:30px;}
+p {text-align: center; font-family: 'Nunito', sans-serif; font-size:20px;}
+.feature-product-section,.category-section, .footer-section, .instagram-section,.blog-section{padding-top:100px;}
+
+/* Newsletter Css */
+.newsletter {position: fixed; z-index: +99; font-family: 'Nunito', sans-serif; margin: 0;}
+.newsletter .form-group {position:relative; margin:0;}
+.newsletter .form-group:before{border-radius: 5%; content:""; position:absolute; top:-1%; left:0; color:white; background-image: url(../img/bookmark.png); height:38px; width:50px;}
+.newsletter .form-control {transition:all 1s ease-in; width:70%; background: #f82222; border:1px solid #f82222; border-radius: 5%; margin-left:-45%;}
+.form-control::placeholder {color:#ffffff; text-align: right;}
+.form-control:focus{background-color: #ffffff;  color:#000000;}
+.form-control:focus::placeholder{color:#000000;}
+.newsletter .form-group {color:#f01c1c; font-size:20px;}
+.newsletter:hover .form-control {margin-left:22%;}
+
+
+
+
+/* Before Nav CSS------
+--------------- --------------------- */
+.top-container-fluid {background-color: transparent; color:#525661; padding:20px 0; position:absolute; z-index: 1;}
+.top-container-fluid p{margin:0; padding:10px; font-size:16px;}
+.top-container-fluid .btn {color:#525661; padding:1px 20px; background-color: transparent; border:2px solid #525661;}
+.top-container-fluid a {color:#525661; padding:10px; font-size:20px;}
+
+@media (max-width: 576px) {.top-container-fluid {display:none;}}
+@media (max-width: 768px) and (min-width: 577px) {.top-container-fluid {margin-top:16px;}}
+
+/*Nav CSS------
+--------------- --------------------- */
+
+.navbar {position:absolute; z-index: 1;}
+.navbar a {color:#525661; font-size:15px; font-weight: bold;}
+.dropdown-menu {background-color:transparent;}
+.navbar-brand img {width:100%; height:auto;}
+.navbar-nav {height: 70px;}
+@media (max-width: 576px) {.navbar-brand img {width: 170px;}}
+
+/* Banner CSS----------
+--------------- */
+.text-white {position:relative;}
+.text-white img {height:600px;}
+.text-white .card-title {font-family: 'Sansita Swashed', cursive; font-size:80px;}
+.banner-section .text-white p {font-family: 'Piazzolla', serif; font-size:30px; margin-bottom:0; padding-bottom:20px; text-align: left;}
+.discount {color:red; font-size:50px; font-weight: bolder;}
+.banner-btn {padding:20px; background-color: #000000; display:inline; border-top-left-radius: 10%;}
+.banner-btn .btn {color:white; font-family: 'Sansita Swashed', cursive; font-size:30px;}
+.card-1-content{ left:50%; top:20%;}
+.card-2-content {top:20%; left:10%}
+#mob-dis {display:none;}
+
+@media (max-width: 576px) {
+    .text-white .card-title {font-size:40px;}
+    .discount {font-size:30px;}
+    .card-1-content {left: 45%;top: 20%;}
+    .banner-btn .btn {font-size: 15px;}
+    .card-2-content {top:20%; left:0;}
+    .banner-btn {padding:10px;}
+    .banner-section .text-white p {padding-bottom:5px; font-size:18px;}
+    .text-white img {height:420px;}
+    #mob-dis {display:block;}
+    #desk-dis {display:none;}
+}
+@media (max-width: 768px) and (min-width: 577px) {
+    .text-white .card-title {font-size: 45px;}
+}
+
+/* Best Sell Product CSS----------
+--------------- */
+
+.best-sell-card {padding:0; margin: 0 5px;}
+.best-sell-card .card-title {font-family: 'Sansita Swashed', cursive; font-size:20px;}
+.best-sell-card .card-text {font-family: 'Piazzolla', serif; font-size:18px; text-align: left;}
+.best-sell-card .card-text a {text-decoration: underline; font-weight: bold; text-align:left;}
+.offer {bottom:0; position: absolute; font-family: 'Sansita Swashed', cursive; font-size: 20px; color:red;}
+.offer p {margin-bottom:0;}
+
+
+
+@media (max-width: 576px) {.offer p {font-size:18px; margin-bottom:0;} .best-sell-card{margin:5px;}}
+@media (max-width: 768px) and (min-width: 577px) {.offer p {margin-bottom: 109px;font-size: 13px;}
+}
+
+/* Feature Product CSS----------
+--------------- */
+
+.featured-products-row {padding-top:30px;}
+.snd-container, .trd-container {display: none;}
+.featured-products-row .card-notify-badge {position: absolute;left: -10px;top: -20px;background: #f2d900;
+    text-align: center;border-radius: 30px 30px 30px 30px; color: #000;padding: 5px 10px;font-size: 14px;}
+.featured-products-row .card-notify-year { position: absolute; right: -10px; top: -20px; background: #ff4444; border-radius: 50%;
+    text-align: center;color: #fff; font-size: 14px;width: 50px;height: 50px; padding: 15px 0 0 0;}
+.rounded img {width:100%; height:150px;}
+.featured-products-row  .card-detail-badge {      
+        background: #f2d900;
+        text-align: center;
+        border-radius: 30px 30px 30px 30px;
+        color: #000;
+        padding: 5px 10px;
+        font-size: 14px;        
+    }
+
+    .featured-products-row .card:hover {
+        background: #fff;
+        box-shadow: 12px 15px 20px 0px rgba(46,61,73,0.15);
+        border-radius: 4px;
+        transition: all 0.3s ease;
+    }
+
+    .featured-products-row .ad-btn {
+        text-transform: uppercase;
+        width: 150px;
+        height: 40px;
+        border-radius: 80px;
+        font-size: 16px;
+        line-height: 35px;
+        text-align: center;
+        border: 3px solid #e6de08;
+        display: block;
+        text-decoration: none;
+        margin: 20px auto 1px auto;
+        color: #000;
+        overflow: hidden;        
+        position: relative;
+        background-color: #e6de08;
+    }
+
+
+    .featured-products-row .ad-btn:hover {
+        background-color: #e6de08;
+        color: #1e1717;
+        border: 2px solid #e6de08;
+        background: transparent;
+        transition: all 0.3s ease;
+        box-shadow: 12px 15px 20px 0px rgba(46,61,73,0.15);
+    }
+
+
+    .featured-products-row  .ad-title h5 {
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+
+    .load-more-btn {padding-top:30px;}
+    .load-more-btn .btn {background:transparent; color:#000000; border:2px solid #000000; font-weight: 800; display: flex; margin: auto;}
+
+    @media (max-width: 576px) {.rounded{margin-top: 30px;}}
+
+
+
+    /*---------------------------- Category Section Css--------------------------
+    ---------------------------------------------------------------------------- */
+
+
+   .category-section .nav-tabs {background: cornsilk; margin-top:50px;}
+   .category-section  .nav-item{border:1px solid #bbbbbb !important; color:black; font-weight:700;font-family: 'Nunito', sans-serif;}
+   .category-tab-row {padding-top:40px;}
+   .nav-tabs .fa {color:red; font-size:25px;}
+
+
+
+  /*---------------------------- Instagram Section Css--------------------------
+    ---------------------------------------------------------------------------- */
+
+.instagram-row {padding-top:50px;}
+.insta-post{position:relative;}
+.insta-post img {width:250px; height: 250px;}
+.insta-post:before {position:absolute; content:""; left:0; top:0; background-image: url(../img/over.png); height:250px; width:250px; z-index: 1; opacity:.4; display: none;}
+.insta-post:hover::before {display: block;}
+
+@media (max-width: 576px) {.mob {margin:5px 0;}.insta-post img {width: 100%;} .insta-post:before {width: 100%;}       }
+@media (max-width: 768px) and (min-width:577px){
+.insta-post img {width: 175px;height: 200px;}
+.insta-post:before {width: 175px;height: 200px;}
+}
+/*---------------------------- Blog Section Css--------------------------
+    ---------------------------------------------------------------------------- */
+
+
+
+.blog-col {padding:0 5px;}
+.blog-section .card-body {text-align: center;}
+.blog-section .card img {width:100%; height:250px;}
+.blog-section .card { box-shadow: 2px 2px  #efefef;}
+.blog-col .card .btn {border:1px solid #000000;}
+
+@media (max-width: 576px) {.blog-section .card img {height:250px;}}
+
+
+
+   /*--------------------------- Footer Section CSS ----------------------------
+   ------------------------------------------------------------------------- */
+   .footer-fluid-container {background-color: #908b8d;}
+   .footer-logo {padding-top:50px; }
+   .social-media {text-align: center;} 
+   .social-media a {color: #ffffff; padding:0 30px; font-size:25px;}
+   .footer-nav {padding-top:20px;}
+   .footer-nav ul li a {color:#ffffff; font-family: 'Nunito', sans-serif; padding:10px;}
+   
+   .footer-last-container {background-color: #908b8d;}
+   .footer-last-container p{text-align: left; font-size: 14px; color:#ffffff; margin-bottom:0; padding:10px;}
+   .payment ul li {list-style: none; display:inline-block; padding:5px;}
+
+   @media (max-width: 576px) {.social-media a {padding: 0px 10px;}  .payment .nav {justify-content:center !important;} .footer-last-container p{text-align: center;}}
+
+
+   /* -----------------------------------------------------------------------------------------------------------------------------
+
+   Contact Us Page Css Start From Here
+   
+   ------------------------------------------------------------------------------------------------------------------------------ */
+   .map-section, .contact-form-section {padding-top:60px;}
+   .banner-contact-fluid {background-color: #94908d; }
+   .banner-img {height:690px;}
+   .banner-img img {width:100%; height:auto;}
+   .banner-content {position:relative; height:600px;}
+   .banner-content h1 {position:absolute; top:40%; font-family: 'Sansita Swashed', cursive; color:#ffffff; font-size:80px; text-align: center; }
+
+   .contact-form-section {padding-bottom:60px;}
+   form {border-right:2px solid #000000; padding-right:40px;}
+   .contact-form-section .btn {background: transparent; border:1px solid #000000; color:#000000; padding:1px 40px;}
+   .contact-info {padding-top:20px;}
+   .contact-info p{text-align: left;}
+
+   @media (max-width: 576px) {.banner-content h1{font-size:50px;} .banner-content {height:250px;}  .banner-img {height:330px;}}
